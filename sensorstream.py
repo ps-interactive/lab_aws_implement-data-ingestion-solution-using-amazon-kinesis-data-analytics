@@ -17,8 +17,8 @@ while 1:
    if (rnd < 0.01):
       data = json.dumps(getData("DemoSensor", 100, 120))  
       kinesis.put_record("RawStreamData", data, "DemoSensor")
-      print '***************************** anomaly ************************* ' + data
+      print('***************************** anomaly ************************* ' + data)
    else:
       data = json.dumps(getData("DemoSensor", 10, 20))  
       kinesis.put_record("RawStreamData", data, "DemoSensor")
-      print data
+      print(data)
