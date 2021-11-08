@@ -1,7 +1,6 @@
 import json
 import datetime
 import random
-import testdata
 from boto import kinesis
 
 kinesis = kinesis.connect_to_region("us-west-2")
